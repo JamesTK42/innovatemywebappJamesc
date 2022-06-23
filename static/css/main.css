@@ -8,7 +8,8 @@
     h1,
     h2,
     h3,
-    p {
+    p,
+    pre {
         color: rgb(143, 143, 143);
     }
 }
@@ -22,7 +23,8 @@
     h1,
     h2,
     h3,
-    p {
+    p,
+    pre {
         color: rgb(143, 143, 143);
     }
 }
@@ -30,7 +32,10 @@
 /* font Style */
 * {
     font-family: Arial, Helvetica, sans-serif;
+}
 
+h1 {
+    font-weight: bold;
 }
 
 svg {
@@ -47,14 +52,16 @@ svg {
         backdrop-filter: blur(2px);
         width: 100%;
         right: 0px;
-        top: -20px;
+        top: 0px;
         position: fixed;
     }
 
-    p {
+    p,
+    pre {
         text-align: justify;
         margin-left: 15px;
         margin-right: 15px;
+        font-family: Arial, Helvetica, sans-serif;
     }
 
 
@@ -66,23 +73,24 @@ svg {
         min-height: 10vh;
         flex-direction: row;
         position: fixed;
-        justify-content: center;
+        /* justify-content: center; */
         align-items: flex-end;
         width: 100%;
         right: 0px;
         bottom: 0px;
-
+        overflow: auto
     }
 
     .links {
         background-color: rebeccapurple;
         margin: 7px;
-        width: 10vh;
+        min-width: 10vh;
         height: 10vh;
         border-radius: 40%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+
     }
 
     /* shop */
@@ -104,19 +112,91 @@ svg {
         margin: 10px;
         margin: 1vh;
     }
+
+    /* items */
+
+    .itemgal {
+        width: 99vw;
+        height: auto;
+        display: flex;
+        position: absolute;
+    }
+
+    .itmimg {
+        /* border-radius: 5%; */
+        width: 95vw;
+        height: auto;
+        margin: 10px;
+        margin-top: 46px;
+    }
+
+    #e404 {
+        padding-top: 30%;
+        text-align: center;
+    }
+
+    #e404p {
+        text-align: center;
+    }
+
+    .e404img {
+        width: 80vw;
+        height: auto;
+        border-radius: 10%;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    .flexshop {
+        display: flex;
+        width: 99vw;
+        height: 100vh;
+        margin-top: 48vh;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: absolute;
+        text-align: justify;
+        padding-top: 11%;
+        padding-bottom: 50%;
+
+    }
+
+    .icons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socials {
+        background: none;
+        border: none;
+        margin: 15px;
+
+    }
+
+    .twitlink {
+        width: 30vw;
+    }
 }
 
 @media(orientation:landscape) {
 
-    h1,
-    p {
+    h1 {
         margin-left: 15vh;
         margin-right: 30vh;
     }
 
-    p {
+    /* p {
         text-align: justify;
-    }
+                margin-left: 15vh;
+        margin-right: 30vh;
+    } */
 
 
     nav {
@@ -165,6 +245,83 @@ svg {
         margin: 10px;
         border-radius: 10%;
         box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    /* items */
+
+    .itemgal {
+        margin-left: 15vh;
+        width: 70vh;
+        height: auto;
+        display: flex;
+        position: fixed;
+    }
+
+    .itmimg {
+        border-radius: 5%;
+        width: 70vh;
+        height: auto;
+        margin: 10px;
+        margin-top: 6vh;
+    }
+
+    .flexshop {
+        display: flex;
+        width: 45%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: 50vw;
+        position: fixed;
+        text-align: justify;
+
+    }
+
+    .icons {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .socials {
+        background: none;
+        border: none;
+
+    }
+
+    .twitlink {
+        width: 150px;
+        transition: all .3s ease-in-out;
+    }
+
+    .twitlink:hover {
+        transform: scale(1.1);
+    }
+
+
+    #e404 {
+        /* margin-left: 11vh; */
+        text-align: center;
+    }
+
+    #e404p {
+        /* margin-left: 11vh; */
+        text-align: center;
+    }
+
+    .e404img {
+
+        width: 28vw;
+        height: auto;
+        border-radius: 10%;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 }

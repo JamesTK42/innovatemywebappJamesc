@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
     <!--CSS LINK-->
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
     <title>Document</title>
 </head>
 
@@ -17,6 +19,7 @@
     {% endblock %}
 
     <nav>
+
         <a class="links" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="8vh" height="auto" fill="currentColor"
                 class="NavIcon" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
@@ -24,7 +27,7 @@
                 <path fill-rule="evenodd"
                     d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
             </svg></a>
-        <a class="links" href="Link 2"><svg xmlns="http://www.w3.org/2000/svg" width="8vh" height="auto"
+        <a class="links" href="/whois"><svg xmlns="http://www.w3.org/2000/svg" width="8vh" height="auto"
                 fill="currentColor" class="NavIcon" viewBox="0 0 16 16">
                 <path
                     d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z" />
@@ -40,7 +43,20 @@
                 <path
                     d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2zM14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1zM2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1h-10z" />
             </svg></a>
+        <a class="links" href="/links"><svg xmlns="http://www.w3.org/2000/svg" width="8vh" height="auto"
+                fill="currentColor" class="bi bi-link" viewBox="0 0 16 16">
+                <path
+                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9c-.086 0-.17.01-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z" />
+                <path
+                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4.02 4.02 0 0 1-.82 1H12a3 3 0 1 0 0-6H9z" />
+            </svg></a>
     </nav>
+    <div class="ld">
+        <input type="radio" id="dark-mode" value="dark-mode" name="color-scheme">
+        <label for="dark-mode" class="color-scheme">Light</label>
+        <input type="radio" id="light-mode" value="light-mode" name="color-scheme" checked>
+        <label for="light-mode" class="color-scheme">Dark</label>
+    </div>
 
 
 
@@ -52,8 +68,9 @@
 
 
 
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
 </body>
 
