@@ -33,3 +33,48 @@ def login():
 @views.route("/item1")
 def item1():
     return render_template("item1.html")
+
+
+@views.route("/item3")
+def item3():
+    return render_template("item3.html")
+
+
+@views.route("/item4")
+def item4():
+    return render_template("item4.html")
+
+
+@views.route("/item5")
+def item5():
+    return render_template("item5.html")
+
+
+@views.route("/item6")
+def item6():
+    return render_template("item6.html")
+
+
+@views.route("/item7")
+def item7():
+    return render_template("item7.html")
+
+
+@views.route("/item8")
+def item8():
+    return render_template("item8.html")
+
+
+@views.route("/item9")
+def item9():
+    return render_template("item9.html")
+
+
+@views.route("/item10")
+def item10():
+    return render_template("item10.html")
+
+
+@views.route("/item2")
+def item2():
+    return render_template("item2.html")
